@@ -1,0 +1,33 @@
+### Register.
+POST {{host}}/user/register/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "first_name": "Sardorbek",
+  "phone": "998993802888",
+  "password": "Zaqwer123$"
+}
+
+### Register Confirm.
+POST {{host}}/user/register-confirm/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phone": "998993802888",
+  "code": "48315"
+}
+
+### Login.
+POST {{host}}/user/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phone": "998993802888",
+  "password": "Zaqwer123$"
+}
+
+### Test.
+GET {{host}}/test
